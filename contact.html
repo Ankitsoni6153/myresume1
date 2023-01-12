@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="in.css" />
+    
+     <style>
+    body {
+ 
+ background-color: #cccccc;
+  background-repeat: no-repeat, repeat;
+   background-position: right;
+    border-radius: 50%;
+}
+  </style>
+  </head>
+
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="logo.png" class="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="certificate.html">Certificate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+       
+          <a href="login2.php" class="btn">login</a>
+      </nav>
+
+      <div class="content">
+        <h2 class="title">Contact</h2>
+        
+        <p>
+            <h2 class="title"> Email Id: (ankitsoni6153@gmail.com)</h2> 
+            <br>
+            <h2 class="title"> Phone No: (7318506153)</h2>
+            <br>
+            <h2 class="title"> Github: <a target="_blank" href="https://github.com/Ankitsoni6153"> (https://github.com/Ankitsoni6153) </a></h2>
+            <br>
+            <h2 class="title"> linked in: <a target="_blank" href="https://www.linkedin.com/in/ankit-k-soni/"> (linkedin.com/in/ankit-k-soni) </a></h2>
+           
+           
+           
+        </p>
+               
+      </div>
+
+      
+
+      </div>
+
+
+
+
+
+      <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+          background-color: #555;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          opacity: 0.8;
+          position: fixed;
+          bottom: 23px;
+          right: 28px;
+          width: 280px;
+        }
+        
+        /* The popup form - hidden by default */
+        .form-popup {
+          display: none;
+          position: fixed;
+          bottom: 0;
+          right: 15px;
+          border: 3px solid #f1f1f1;
+          z-index: 9;
+        }
+        
+        /* Add styles to the form container */
+        .form-container {
+          max-width: 300px;
+          padding: 10px;
+          background-color: white;
+        }
+        
+        /* Full-width input fields */
+        .form-container input[type=text], .form-container input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          background: #f1f1f1;
+        }
+
+
+
+        .form-container input[type=email], .form-container input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        /* When the inputs get focus, do something */
+        .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        /* Set a style for the submit/login button */
+        .form-container .btn {
+          background-color: #04AA6D;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          margin-bottom:10px;
+          opacity: 0.8;
+        }
+        
+        /* Add a red background color to the cancel button */
+        .form-container .cancel {
+          background-color: red;
+        }
+        
+        /* Add some hover effects to buttons */
+        .form-container .btn:hover, .open-button:hover {
+          opacity: 1;
+        }
+        </style>
+
+
+        <button class="open-button" onclick="openForm()">Contact me</button>
+
+<div class="form-popup" id="myForm" >
+  <form style="background-color: #cccccc;" action="insert.php" method="post"class="form-container">
+    <h1 style="   color: #0a0a0a;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(
+      120deg,
+      #1c99fe 20.69%,
+      #7644ff 50.19%,
+      #fd4766 79.69%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;">Contact Me</h1><br>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Your Name" name="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email_id" required>
+    <label for="Phone No"><b>Phone No</b></label>
+    <input type="text" placeholder="Enter Your Phone No" name="mobile" required>
+    <label for="Message"><b>Message</b></label>
+    <input type="text" placeholder="Enter Your Message" name="message" required>
+
+    
+    <button type="submit" value="Submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+      
+    
+  </body>
+</html>
